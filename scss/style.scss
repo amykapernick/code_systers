@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:400,400i,700,700i|BioRhyme:400,700|Cabin:400,400i,700,700i|Flamenco|Karla:400,400i,700,700i|Lora:400,700|Merriweather:400,400i,700,700i|Roboto:400,400i,700,700i|Rubik:400,700|Space+Mono:400,700&display=swap');
+
+body {
+	line-height: 1.2;
+	margin: 0;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+img {
+	max-width: 100%;
+}
+
+main {
+	img {
+		max-width: 500px;
+	}
+}
+
+body {
+	&.styled {
+		color: var(--neutral);
+		font-family: var(--main);
+		font-size: 18px;
+
+		main {
+			padding: 30px;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4 {
+			color: var(--primary);
+			font-family: var(--headings);
+		}
+
+		h1,
+		h2 {
+			font-weight: bold;
+		}
+
+		h1 {
+			font-size: 0;
+			position: absolute;
+			right: -200vw;
+		}
+
+		blockquote {
+			border: 3px solid var(--primary);
+			color: var(--secondary);
+			font-family: var(--headings);
+			font-size: 2em;
+			margin: 0 auto;
+			padding: 50px;
+			text-align: center;
+		}
+
+		.profile {
+			clear: both;
+			overflow: hidden;
+
+			img {
+				border: 3px solid var(--secondary);
+				float: right;
+				margin-left: 20px;
+				width: 30%;
+				min-width: 200px;
+			}
+		}
+
+		.gallery {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+			grid-template-rows: auto;
+			grid-auto-rows: 1fr;
+			grid-gap: 10px;
+			grid-auto-flow: dense;
+
+			h2 {
+				grid-column: 1 / -1;
+			}
+
+			figure {
+				margin: 0;
+				padding: 15px 15px 10px;
+
+				&:nth-child(3n) {
+					grid-column: span 2;
+					grid-row: span 2;
+				}
+			}
+
+			img {
+				border: 2px solid var(--secondary);
+				max-width: 100%;
+			}
+
+			figure,
+			img {
+				border: 2px solid var(--secondary);
+				border-radius: 20px;
+			}
+
+			figcaption {
+				color: var(--primary);
+				padding: 5px 10px;
+			}
+		}
+	}
+
+	&.style-1 {
+		--primary: #16427c;
+		--secondary: #2101af;
+		--neutral: #1e1e1e;
+		--headings: 'BioRhyme', serif;
+		--main: 'Cabin', sans-serif;
+	}
+
+	&.style-2 {
+		--headings: 'Flamenco', sans-serif;
+		--main: 'Asap', sans-serif;
+	}
+
+	&.style-3 {
+		--headings: 'Space Mono', monospace;
+		--main: 'Roboto', sans-serif;
+	}
+
+	&.style-4 {
+		--headings: 'Lora', serif;
+		--main: 'Merriweather', serif;
+	}
+
+	&.style-5 {
+		--headings: 'Rubik', sans-serif;
+		--main: 'Karla', sans-serif;
+	}
+}

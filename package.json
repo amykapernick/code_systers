@@ -1,0 +1,22 @@
+{
+  "name": "code_systers",
+  "version": "1.0.0",
+  "description": "HTML workshop for code_systers",
+  "main": "index.html",
+  "repository": "git@github.com:amykapernick/code_systers.git",
+  "author": "Amy Kapernick <amy@aimhigherwebdesign.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "gulp sassy && gulp watch",
+    "build": "gulp sassy"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-prettier": "^2.1.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "prettier": "^1.18.2"
+  }
+}
