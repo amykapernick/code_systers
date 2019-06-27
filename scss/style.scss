@@ -19,6 +19,7 @@ main {
 
 body {
 	&.styled {
+		background: var(--background);
 		color: var(--neutral);
 		font-family: var(--main);
 		font-size: 18px;
@@ -109,30 +110,62 @@ body {
 		}
 	}
 
-	&.style-1 {
+	&.colour-1 {
 		--primary: #16427c;
 		--secondary: #2101af;
 		--neutral: #1e1e1e;
+		--background: #fff;
+	}
+
+	&.colour-2 {
+		--primary: #bf68f9;
+		--secondary: #e770ff;
+		--neutral: #1e1e1e;
+		--background: #fff;
+	}
+
+	&.colour-3 {
+		--primary: #bf68f9;
+		--secondary: #e770ff;
+		--neutral: #ffffff;
+		--background: #1e1e1e;
+	}
+
+	&.colour-4 {
+		--primary: #31c68d;
+		--secondary: #54e7f7;
+		--neutral: #ffffff;
+		--background: #1e1e1e;
+	}
+
+	&.colour-5 {
+		--primary: #1c75bc;
+		--secondary: #16a6b1;
+		--neutral: #1e1e1e;
+		--background: #fff;
+	}
+
+	&.font-1 {
 		--headings: 'BioRhyme', serif;
 		--main: 'Cabin', sans-serif;
 	}
 
-	&.style-2 {
+	&.font-2 {
 		--headings: 'Flamenco', sans-serif;
 		--main: 'Asap', sans-serif;
 	}
 
-	&.style-3 {
+	&.font-3 {
 		--headings: 'Space Mono', monospace;
 		--main: 'Roboto', sans-serif;
 	}
 
-	&.style-4 {
+	&.font-4 {
 		--headings: 'Lora', serif;
 		--main: 'Merriweather', serif;
 	}
 
-	&.style-5 {
+	&.font-5 {
 		--headings: 'Rubik', sans-serif;
 		--main: 'Karla', sans-serif;
 	}
